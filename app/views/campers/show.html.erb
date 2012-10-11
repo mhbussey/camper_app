@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @camper.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @camper.email %>
+</p>
+
+<p>
+  <b>Institution:</b>
+  <%= @camper.institution %>
+</p>
+
+<p>
+  <b>Gitid:</b>
+  <%= @camper.gitId %>
+</p>
+
+<p>
+  <b>Jiraid:</b>
+  <%= @camper.jiraId %>
+</p>
+
+
+<%= link_to 'Edit', edit_camper_path(@camper) %> |
+<%= link_to 'Back', campers_path %>
