@@ -1,6 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'devise'
+
+gem 'rspec-rails', :group => [:development, :test]
+group :test do
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'email_spec'
+end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

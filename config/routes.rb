@@ -1,5 +1,15 @@
 CampApp::Application.routes.draw do
+
   resources :campers
+  root :to => "campers#index"
+
+  devise_for :users
+  authenticated :user do
+    root :to => 'home#index'
+  end
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
